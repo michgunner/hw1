@@ -38,7 +38,19 @@ if (firstNum > secoundNum)
 
 //Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка)
 
+/*
 Console.Write("Please, enter your number: ");
 int num = Convert.ToInt32(Console.ReadLine());
 if (num%2 ==0) Console.WriteLine("Your number is even");
 else Console.WriteLine("Your number is not even");
+*/
+
+//Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
+
+Console.Write("Please, enter your number: ");
+int num = Convert.ToInt32(Console.ReadLine());
+for (int i = 2; i<=num; i++)
+{
+   if (i%2 == 0 && num-i>1) Console.Write(i + ", ");
+   else if (i%2 ==0) Console.Write(i + ".");
+}
