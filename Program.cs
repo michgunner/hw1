@@ -49,7 +49,7 @@ else Console.WriteLine("Your number is not even");
 
 Console.Write("Please, enter your number: ");
 int num = Convert.ToInt32(Console.ReadLine());
-for (int i = 2; i<=num; i++)
+for (int i = 2; i<=num; i+=2)
 {
    if (i%2 == 0 && num-i>1) Console.Write(i + ", ");
    else if (i%2 ==0) Console.Write(i + ".");
